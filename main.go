@@ -16,3 +16,17 @@ func main() {
 	}
 
 }
+
+/*
+1.AllDays b/w two
+2.AllDays since
+3.AllWeekday b/w two
+4.AllWeekday since
+5.Random dates b/w two
+6.Random dates Ordered
+7.MonthDay b/w two
+8.MonthDay since
+9.RandomDay
+10.RandomDaysince
+11.Order dates slice
+*/

@@ -13,11 +13,13 @@ func init() {
 	utcLocation, _ = time.LoadLocation("Local")
 }
 
-type Date struct {
-	Year, Month, Day int
+type Date interface {
+	Year() int
+	Month() time.Month
+	Day() int
 }
 
-type DateSlice []time.Time
+type DateSlice []Date
 
 func (v DateSlice) Less() {
 

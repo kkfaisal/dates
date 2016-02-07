@@ -2,7 +2,6 @@ package dates
 
 import (
 	"errors"
-	"fmt"
 	"math/rand"
 	"time"
 )
@@ -100,7 +99,6 @@ func uniqueRandomNumbers(count, max int) (outSlice []int, err error) {
 	outSlice = []int{}
 	for {
 		num := rand.Intn(max)
-		fmt.Println(num)
 		addUniqueRandValue(outMap, num, max, count)
 
 		if len(outMap) == count {

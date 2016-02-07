@@ -23,7 +23,7 @@ Installation is simple as
     fmt.Println(out[0])//A random date in range
   }
 ```
-#### Example   1 - Generate a random weekday
+#### Example   2 - Generate a random weekday
 ```go
     loc, _ := time.LoadLocation("")
   from := time.Date(2000, 1, 1, 0, 0, 0, 0, loc)

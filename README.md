@@ -1,6 +1,6 @@
-Random dates /week days.Can be used in testing data transformation/ETL functions ...  
-Installation is simple as
+Random dates /week days.Can be used in testing data transformation/ETL functions.
 
+Installation is simple as
     go get  github.com/kkfaisal/dates
 
 

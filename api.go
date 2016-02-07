@@ -1,3 +1,4 @@
+/* Random dates or week days generators can be helpful for testing data transformation (ETL) functions.*/
 package dates
 
 import (
@@ -5,20 +6,6 @@ import (
 	"sort"
 	"time"
 )
-
-/*
-1.AllDays b/w two
-2.AllDays since
-3.AllWeekday b/w two
-4.AllWeekday since
-5.Random dates b/w two
-6.Random dates Ordered
-7.MonthDay b/w two
-8.MonthDay since
-9.RandomDay
-10.RandomDaysince
-11.Order dates slice
-*/
 
 //All dates from from to to date .Will be in order
 func AllDates(from, to time.Time) (out []time.Time, err error) {
@@ -76,16 +63,6 @@ func RandomWeekDaysSorted(from, to time.Time, weekDay time.Weekday, count int) (
 	sort.Sort(DateSlice(out))
 	return
 }
-
-// //Random dates from from to To dates
-// func GetRandomDatesInRange(count int, from, to Date) []Date {
-
-// }
-
-// //Random Dates from a specific day
-// func GetRandomDatesSince(count int, from Date) []Date {
-
-// }
 
 func checkParms(infrom, into time.Time) (from, to time.Time, err error) {
 	from = dateFromTime(infrom)

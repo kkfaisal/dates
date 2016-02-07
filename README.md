@@ -1,7 +1,10 @@
 Random dates /week days.Can be used in testing data transformation/ETL functions.
 
 Installation is simple as
+
     go get  github.com/kkfaisal/dates
+
+[Go doc](https://godoc.org/github.com/kkfaisal/dates)
 
 
 #### Features

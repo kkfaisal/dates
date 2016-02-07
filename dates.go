@@ -12,6 +12,18 @@ func dateFromTime(in time.Time) time.Time {
 	return time.Date(in.Year(), in.Month(), in.Day(), 0, 0, 0, 0, utcLocation)
 }
 
+func allDays(from, to time.Time) (out []time.Time) {
+	newDate := from
+	out = append(out, newDate)
+	for {
+		if newDate = newDate.AddDate(0, 0, 1); newDate.After(to) || newDate.Equal(to) {
+			break
+		}
+		out = append(out, newDate)
+	}
+	return
+}
+
 func randomDays(from, to time.Time, count int) (out []time.Time, err error) {
 	max := numOfDaysBetween(from, to)
 
